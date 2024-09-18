@@ -1,0 +1,171 @@
+
+.auth__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.auth__image--box {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url('../Assets/giftbox.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 4.2rem;
+}
+.auth__image--box, .auth__image--box span {
+    display: flex;
+    flex-direction: column;
+
+}
+.auth--box  {
+    margin: auto;
+}
+.auth__image--box span {
+    margin-top: 60%;
+}
+.auth__logo {
+    margin-bottom: 3.2rem;
+}
+.auth__logo img {
+    height: 8rem;
+}
+.auth__image--box span h2 {
+    font-size: 3.4rem;
+    color: #fff;
+    margin-bottom: 1.6rem;
+}
+.auth__image--box span p {
+    color: #fff;
+}
+.auth--heading {
+    margin-bottom: 4rem;
+}
+.login--auth {
+    padding: 10rem 8rem;
+}
+
+.signup--auth {
+    padding: 4rem 6.2rem;
+}
+.auth--form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.form--flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem;
+}
+.form--item {
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.form--label {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.form--input {
+    padding: 1.2rem;
+    border-radius: .4rem;
+    outline: none;
+    border: 1.6px solid #eee;
+    font-family: inherit;
+    transition: all .35s;
+}
+.form--input:focus {
+    border-color: #bb0505;
+}
+.form--input::placeholder {
+    font-family: inherit;
+}
+.form--check, .form--others {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+.form--check {
+    align-items: flex-start;
+}
+.form--check input {
+    margin-top: .4rem;
+}
+.form--others {
+    gap: 1.8rem;
+}
+.form--submit {
+    display: inline-block;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #bb0505;
+    padding: 1.2rem 1.6rem;
+    border-radius: .4rem;
+}
+.form--content {
+    /* margin-top: 1rem; */
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+.form--content a:link, .form--content a:visited {
+    text-decoration: underline;
+}
+
+.form--input-box {
+    position: relative;
+    width: 100%;
+}
+.form--input-box input {
+    width: 100%;
+}
+.form--input-box input::placeholder {
+    font-size: 1.4rem;
+}
+.password__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
+    right: 1rem;
+    cursor: pointer;
+}
+
+
+/* ======================================== */
+.google--login, .email--login {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+
+    cursor: pointer;
+    box-shadow: inset 0 0 0 .13rem #eee;
+}
+.email--login img {
+    width: 3.2rem;
+}
+.email--login p {
+    color: #888;
+}
+.auth--diff {
+    display: grid;
+    grid-template-columns: 1fr 2rem 1fr;
+    align-items: center;
+    gap: 1.4rem;
+    color: #aaa;
+    font-size: 1.2rem;
+}
+.auth--diff span:nth-child(odd) {
+    border-bottom: .14rem solid #eee;
+}
+/* .login--auth .auth--diff { */
+.auth--diff {
+    margin: 3.6rem 0;
+}

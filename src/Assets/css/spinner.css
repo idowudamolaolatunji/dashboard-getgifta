@@ -1,0 +1,33 @@
+.spinner__container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .18);
+	z-index: 100000;
+}
+.spinner {
+	position: absolute;
+	top: 45%;
+	left: 48%;
+	width: 4.8rem;
+	height: 4.8rem;
+	border-radius: 50%;
+	margin: 1rem 0;
+	background: radial-gradient(farthest-side, #bb0505 94%, #0000) top/9px 9px no-repeat, conic-gradient(#0000 30%, #bb0505);
+	-webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 0);
+	animation: spinner-rotate 1s infinite linear;
+}
+
+@keyframes spinner-rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
